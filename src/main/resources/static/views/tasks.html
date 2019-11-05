@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<body>
+
+<h2 style="text-align: center; color: darkblue">ERPLY Task Manager</h2>
+
+<div>
+
+    <div class="tasks">
+
+
+        <div id="status" class="block_status">
+
+        <div class="statusMessage" ng-show="statusMessage && !errorMessage">
+            {{statusMessage}}
+        </div>
+
+        <div class="errorMessage" ng-show="errorMessage">
+            {{errorMessage}}
+        </div>
+
+        <span style="margin-left: 200px; flow: right">
+
+                <button type="button" class="nav_left"
+                        ng-show="isNavigateLeft() || isNavigateRight()"
+                        ng-disabled="!isNavigateLeft()"
+                        id="navLeft" ng-click='onNavigateLeft()'> <<
+                </button>
+
+                <button class="nav_right" type="button"
+                        ng-show="isNavigateLeft() || isNavigateRight()"
+                        ng-disabled="!isNavigateRight()"
+                        id="navRight" ng-click='onNavigateRight()'>>>
+                </button>
+
+                <span ng-show="tasks" class="taskinfo"><b>{{startIndex+1}}-{{getFinishIndex()}}</b> tasks of  <b>{{tasks.length}}</b></span>
+
+            </span>
+
+    </div>
+
+
+    <table class="ttasks" id="tasks" cellspacing="0" cellpadding="0" border="1">
+
+        <tr>
+            <colgroup>
+                <col span="1" style="width: 6%;">
+                <col span="1" style="width: 22%;">
+                <col span="1" >
+                <col span="1" style="width: 10%;">
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 8%;">
+                <col span="1" style="width: 12%;">
+            </colgroup>
+
+            <thead>
+            <tr class="header">
+                <th class="cell_header">
+                    ID
+                </th>
+                <th class="cell_header">
+                    Name
+                </th>
+                <th class="cell_header">
+                    Description
+                </th>
+                <th class="cell_header">
+                    Status
+                </th>
+                <th class="cell_header cell_header_date">
+                    Due Date
+                </th>
+
+                <th class="cell_header cell_header_date">
+                    Complete
+                </th>
+                <th class="cell_header cell_header_date">
+                    ...
+                </th>
+            </tr>
+            </thead>
+
+        </tr>
+
+
+        <tr ng-repeat="task in tasks"
+            ng-show="isShowRecord($index)"
+        >
+            <td class="cell_default">
+                {{task.id}}
+            </td>
+
+            <td class="cell_default">
+                {{task.name}}
+            </td>
+
+            <td class="cell_default">
+                {{task.description}}
+            </td>
+
+            <td class="cell_default">
+                {{task.status}}
+            </td>
+            <td style="cell_default">
+                {{task.dueDate | date: 'yyyy-MM-dd' }}
+            </td>
+
+            <td>
+                <input type="button" value="COMPLETE" ng-disabled="!isCompleteAllowed(task)" ng-click="onCompleteTask(task)"/>
+
+
+            </td>
+            <td style="cell_default">
+                <input type="button" value="X" style="color:red" ng-click="ondeleteTask(task.id)"/>
+
+                &nbsp;&nbsp;
+
+                <input type="button" value="Edit" ng-click="onEditTask(task)"/>
+
+                &nbsp;&nbsp;
+
+
+            </td>
+        </tr>
+
+    </table>
+
+
+</div>
+
+<div class="controls">
+    <div class="addtask">
+        <div><b>ADD TASK</b></div>
+
+        <form name="addTask">
+
+            <table>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input type="text" ng-model="task.name" name="taskName" class="taskName">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Due Date:
+                    </td>
+                    <td>
+
+                        <datepicker date-format="yyyy-MM-dd">
+                            <input type="text" ng-model="task.dueDate"/>
+                        </datepicker>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Description:
+                    </td>
+                    <td>
+                        <input type="text" ng-model="task.description" name="taskDescription" class="taskName">
+                    </td>
+                </tr>
+            </table>
+
+            <button style="float: right" ng-disabled="isAddTaskDisabled()" ng-click="addTaskData()">ADD TASK</button>
+
+        </form>
+
+
+    </div>
+
+
+    <div class="edittask">
+        <div><b>EDIT TASK</b></div>
+        <form name="changeTask">
+
+            <table>
+
+                <tr>
+                    <td>
+                        Task ID:
+                    </td>
+                    <td>
+                        <span>{{task2.id}}</span>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input type="text" ng-model="task2.name" name="taskName" class="taskName">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Due Date:
+                    </td>
+                    <td>
+
+                        <datepicker date-format="yyyy-MM-dd">
+                            <input type="text" ng-model="task2.dueDate"/>
+                        </datepicker>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Description:
+                    </td>
+                    <td>
+                        <input type="text" ng-model="task2.description" name="taskDescription" class="taskName">
+                    </td>
+                </tr>
+            </table>
+
+            <button style="float: right" ng-disabled="isUpdateTaskDisabled()"
+                    ng-click="updateTask()">UPDATE TASK</button>
+
+        </form>
+
+
+    </div>
+
+
+
+</div>
+
+
+<div id="loading" style="display: none">
+    <div><img src="images/spinner.gif" width="30" height="30" alt="Be patient..."/>
+    </div>
+</div>
+
+
+    <div id="confirmBox" class="modal">
+        <div class="modal-content">
+
+            <div class="message"></div>
+            <button class="yes" style="width: 50px">OK</button>
+            &nbsp;
+            <button class="no">Cancel</button>
+
+        </div>
+    </div>
+
+</body>
+</html>

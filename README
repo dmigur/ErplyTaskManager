@@ -1,0 +1,26 @@
+﻿TaskManager test application README
+
+
+Installation from the sources:
+--------------------------------------------------
+Run command mvn install.  This will built 2 files 
+   - an executable taskmanager.jar file inside ./target filder 
+   - a Docker image named "erply/taskmanager" , provided Docker is running
+
+Running
+--------------------------------------------------                                            
+1. Running as Spring Boot web application                    
+mvn spring-boot:run
+
+2. Running as Docker application:  docker run -p 8080:8080 erply/taskmanager
+
+
+Usage:
+--------------------------------------------------
+1.Start application
+2.Open web page on localhost:8080
+3.Add tasks using left control pane with "ADD TASK" button    
+4.Edit task by pressing "Edit" button in the task table
+5.Update task by pressing "UPDATE TASK" button in the right pane. 
+6.Complete and delete tasks using "COMPLETE" and "DELETE" buttons.
+

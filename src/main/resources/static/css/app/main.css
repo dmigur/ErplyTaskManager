@@ -1,0 +1,167 @@
+.html,
+
+.main {
+}
+
+.message {
+    padding-bottom: 15px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px solid #888;
+    text-align: center;
+    width: 20%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content-item {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px solid #888;
+    text-align: center;
+    width: 45%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content-order {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px solid #888;
+    text-align: center;
+    width: 45%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content-history {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 2px solid #888;
+    text-align: center;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.block_status{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.tasks {
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 98%;
+    overflow: auto;;
+    min-height: 200px;
+    max-height: 600px;
+}
+
+.addtask {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 45%;
+}
+
+
+.edittask {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 45%;
+}
+.loadfile {
+    margin: 20px;
+    padding: 10px;
+    width: 40%;
+    border: 1px solid #888;
+}
+
+.fileload {
+    margin-top: 25px;
+}
+
+.ttasks{
+    color: black;
+    width: 100%;
+    background-color: white;
+    /*border: 1px solid black;*/
+}
+
+.ttasks th, td{
+    padding: 4px 3px;
+}
+
+.ttasks th
+{
+    background-color: #C0C6DD;
+}
+
+.ttasks td
+{
+    color: #1A1EB2
+}
+
+.cell_default{
+}
+
+.cell_header {
+}
+
+.cell_number{
+}
+
+.cell_header_number{
+
+}
+.cell_header_date{
+    text-align: center
+}
+
+.statusMessage{
+    color: darkgreen;
+}
+
+.errorMessage{
+    color: red;
+}
+
+.taskinfo {
+    margin-left: 150px;
+}
+
+.nav_right {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 1px;
+}
+
+#loading {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    display: none;
+    z-index: 10;
+}
+
+
+.controls{
+    display: flex;
+}

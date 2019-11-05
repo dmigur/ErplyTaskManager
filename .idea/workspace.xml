@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="98fa1ee3-571d-4417-965d-e46d53274276" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="bankcards" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1QPMA3r2jQiQWD00avXKoYRiPyA" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../weatherNemo" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TaskManagerTest.updateTask">
+    <configuration name="TaskManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.erply.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.erply" />
+      <option name="MAIN_CLASS_NAME" value="com.erply.TaskManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskManagerTest.deleteTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.erply.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.erply" />
+      <option name="MAIN_CLASS_NAME" value="com.erply.TaskManagerTest" />
+      <option name="METHOD_NAME" value="deleteTask" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskManagerTest.updateTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.erply.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.erply" />
+      <option name="MAIN_CLASS_NAME" value="com.erply.TaskManagerTest" />
+      <option name="METHOD_NAME" value="updateTask" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskManagerTest.updateTaskNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.erply.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.erply" />
+      <option name="MAIN_CLASS_NAME" value="com.erply.TaskManagerTest" />
+      <option name="METHOD_NAME" value="updateTaskNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskManagerTest.updateTaskStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.erply.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.erply" />
+      <option name="MAIN_CLASS_NAME" value="com.erply.TaskManagerTest" />
+      <option name="METHOD_NAME" value="updateTaskStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TasksApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="taskManager" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.erply.TaskManagerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TaskManagerTest.updateTask" />
+      <item itemvalue="JUnit.TaskManagerTest.deleteTask" />
+      <item itemvalue="JUnit.TaskManagerTest" />
+      <item itemvalue="JUnit.TaskManagerTest.updateTaskStatus" />
+      <item itemvalue="JUnit.TaskManagerTest.updateTaskNotFound" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TaskManagerTest" />
+        <item itemvalue="JUnit.TaskManagerTest.updateTaskNotFound" />
+        <item itemvalue="JUnit.TaskManagerTest.updateTaskStatus" />
+        <item itemvalue="JUnit.TaskManagerTest.deleteTask" />
+        <item itemvalue="JUnit.TaskManagerTest.updateTask" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98fa1ee3-571d-4417-965d-e46d53274276" name="Default Changelist" comment="" />
+      <created>1567667630448</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567667630448</updated>
+      <workItem from="1567667641548" duration="9007000" />
+      <workItem from="1567676702360" duration="11597000" />
+      <workItem from="1567753766729" duration="33081000" />
+      <workItem from="1567839902241" duration="14779000" />
+      <workItem from="1568014288654" duration="8371000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/erply/controller/TaskController.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/erply/service/TaskService.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/erply/TaskManagerTest.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/erply/TaskManagerTest.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/erply/TaskManagerTest.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/erply/TaskManagerTest.java</url>
+          <line>165</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
